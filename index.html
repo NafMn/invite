@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    
 
     <!-- SEO Tag -->
     <meta name="author" content="Flexdev">
@@ -52,9 +53,10 @@
 
 </head>
 
-<body>
+<body data-email="user@example.com" data-password="12345678" data-url="https://api.ulems.my.id/"
+    style="overflow-y: hidden;">
     <!-- Navbar Bottom -->
-    <!-- <nav class="navbar navbar-dark bg-dark navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menus">
+    <nav class="navbar navbar-light  navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menus">
         <ul class="navbar-nav nav-justified w-100 align-items-center">
             <li class="nav-item">
                 <a class="nav-link" href="#home">
@@ -87,7 +89,7 @@
                 </a>
             </li>
         </ul>
-    </nav> -->
+    </nav>
     <main class="text-dark" data-bs-spy="scroll" data-bs-target="#navbar-menus" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" tabindex="0">
 
@@ -132,12 +134,14 @@
 
 
                 <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
-                    <div class="mouse-animation">
-                        <div class="scroll-animation"></div>
-                    </div>
+                    <a href="#mukodimah">
+                        <div class="mouse-animation">
+                            <div class="scroll-animation"></div>
+                        </div>
+                    </a>
                 </div>
 
-                <p class="m-0">Scroll Down</p>
+                <p class="m-0 mb-2">Scroll Down</p>
             </div>
         </section>
 
@@ -147,18 +151,18 @@
                 d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
-
-        <section class="mukodimah">
-            <!-- Love animation -->
-            <div class="position-relative">
-                <div class="position-absolute" style="top: 0%; right: 10%;">
-                    <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                        class="opacity-50" onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
-                        <path
-                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                    </svg>
-                </div>
+        <!-- Love animation -->
+        <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; right: 10%;">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                    class="opacity-50" onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
             </div>
+        </div>
+
+        <section class="mukodimah" id="mukodimah">
             <div class="text-center" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="font-arabic py-4 px-2 pt-5" style="font-size: 2rem">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
                 </h1>
@@ -350,32 +354,227 @@
                         </div>
                     </div>
                     <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="https://maps.app.goo.gl/bZqqu5M4pYrqEMwb9" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill shadow-sm mb-2 px-3">
+                        <a href="https://maps.app.goo.gl/bZqqu5M4pYrqEMwb9" target="_blank"
+                            class="btn btn-outline-dark btn-sm rounded-pill shadow-sm mb-2 px-3">
                             <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps
                         </a>
                         <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">
                             Dusun Ketawang, Rt 02 Rw 01 Desa Baureno, Baureno Bojonegoro, Jawa Timur, 62192
                         </p>
                     </div>
-
-                    <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="https://goo.gl/maps/ALZR6FJZU3kxVwN86" target="_blank"
-                            class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
-                            <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps
-                        </a>
-                        <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">
-                            
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
+        <section class="text-center" id="galeri" data-aos="fade-up" data-aos-duration="1500">
+            <div class="py-2">
+                <h1 class="font-esthetic" style="font-size: 2rem;">Gallery</h1>
+            </div>
+            <div class="box-galeri ">
+                <div class="container-gallery mt-4">
+                    <div class="box box-1" style="--img: url(/assets/images/gambar-1.jpg);" data-text="gudek"></div>
+                    <div class="box box-2" style="--img: url(/assets/images/gambar-1.jpg);" data-text="gudek"></div>
+                    <div class="box box-3" style="--img: url(/assets/images/gambar-1.jpg);" data-text="gudek"></div>
+                    <div class="box box-4" style="--img: url(/assets/images/gambar-1.jpg);" data-text="gudek"></div>
+                    <div class="box box-5" style="--img: url(/assets/images/gambar-1.jpg);" data-text="gudek"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Hadiah -->
+        <div class="container">
+            <div class="py-4">
 
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1500">
+
+                    <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
+
+                    <p class="mb-1" style="font-size: 0.9rem;">
+                        Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami,
+                        dapat melalui :
+                    </p>
+
+                    <div class="overflow-x-hidden">
+                        <div class="row justify-content-center">
+
+                            <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-down"
+                                data-aos-duration="1500">
+                                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png"
+                                    class="img-fluid w-50 rounded" alt="bni">
+
+                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
+                                <p class="card-text" style="font-size: 0.9rem;">a.n Syahrul Munir</p>
+
+                                <!-- Ubah juga data-nomer sesuai dengan no rekening -->
+                                <button class="btn btn-light btn-sm rounded-3" data-nomer="123456789"
+                                    onclick="util.salin(this)" autofocus>Salin No. Rekening</button>
+                            </div>
+
+                            <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-down"
+                                data-aos-duration="1500">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/640px-BANK_BRI_logo.svg.png"
+                                    class="img-fluid w-50 rounded" alt="BANK_BRI_logo">
+
+                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
+                                <p class="card-text" style="font-size: 0.9rem;">a.n Syahrul Munir</p>
+
+                                <!-- Ubah juga data-nomer sesuai dengan no rekening -->
+                                <button class="btn btn-light btn-sm rounded-3" data-nomer="123456789"
+                                    onclick="util.salin(this)" autofocus>Salin No. Rekening</button>
+                            </div>
+                            <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-right"
+                                data-aos-duration="1500">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/799px-Bank_Central_Asia.svg.png"
+                                    class="img-fluid w-50 rounded" alt="Bank_Central_Asia">
+
+                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
+                                <p class="card-text" style="font-size: 0.9rem;">a.n Syahrul Munir</p>
+
+                                <!-- Ubah juga data-nomer sesuai dengan no rekening -->
+                                <button class="btn btn-light btn-sm rounded-3" data-nomer="123456789"
+                                    onclick="util.salin(this)" autofocus>Salin No. Rekening</button>
+                            </div>
+
+                            <div class="col-5 card-body border rounded-4 shadow p-3 m-3" data-aos="fade-left"
+                                data-aos-duration="1500">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/512px-Logo_dana_blue.svg.png"
+                                    class="img-fluid w-50 rounded" alt="Logo_dana_blue">
+
+                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
+                                <p class="card-text" style="font-size: 0.9rem;">a.n Syahrul Munir</p>
+
+                                <!-- Ubah juga data-nomer sesuai dengan no rekening -->
+                                <button class="btn btn-light btn-sm rounded-3" data-nomer="123456789"
+                                    onclick="util.salin(this)" autofocus>Salin No. Rekening</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ucapan -->
+        <section class="m-0 p-0" id="ucapan">
+            <div class="container">
+
+                <div class="card-body border rounded-4 shadow p-3">
+                    <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem;">Ucapan & Doa</h1>
+                    <div class="mb-1" id="balasan"></div>
+
+                    <div class="mb-3">
+                        <label for="form-nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control shadow-sm" id="form-nama" placeholder="Isikan Nama Anda">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="form-kehadiran" class="form-label" id="label-kehadiran">Kehadiran</label>
+                        <select class="form-select shadow-sm" id="form-kehadiran">
+                            <option value="0" selected>Konfirmasi Kehadiran</option>
+                            <option value="1">Hadir</option>
+                            <option value="2">Berhalangan</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="form-pesan" class="form-label">Ucapan & Doa</label>
+                        <div id="alertDiv" class="alert alert-info alert-dismissible fade show" role="alert">
+                            <p style="font-size: 1.5rem;">Bestieee!!!</p>
+                            <p class="m-0">Kami berharap kedatangannya</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                                onclick="localStorage.setItem('alertClosed', 'true'); document.getElementById('alertDiv').style.display = 'none';"></button>
+                        </div>
+                        <textarea class="form-control shadow-sm" id="form-pesan" rows="4"
+                            placeholder="Tulis Ucapan & Doa"></textarea>
+                    </div>
+
+                    <div class="d-flex">
+                        <button class="flex-fill btn btn-danger btn-sm rounded-3 shadow m-1" style="display: none;"
+                            onclick="comment.batal()" id="batal">
+                            Batal<i class="fa-solid fa-xmark ms-1"></i>
+                        </button>
+                        <button class="flex-fill btn btn-success btn-sm rounded-3 shadow m-1" style="display: none;"
+                            onclick="comment.balas()" id="balas">
+                            Balas<i class="fa-solid fa-reply ms-1"></i>
+                        </button>
+                        <button class="flex-fill btn btn-warning btn-sm rounded-3 shadow m-1" style="display: none;"
+                            onclick="comment.ubah()" id="ubah">
+                            Ubah<i class="fa-solid fa-pen-to-square ms-1"></i>
+                        </button>
+                        <button class="flex-fill btn btn-primary btn-sm rounded-3 shadow m-1" onclick="comment.kirim()"
+                            id="kirim">
+                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="rounded-4 mt-4 mb-2" id="daftar-ucapan"></div>
+
+                <nav class="d-flex justify-content-center mb-0">
+                    <ul class="pagination mb-0">
+                        <li class="page-item disabled" id="previous">
+                            <button class="page-link" onclick="pagination.previous(this)" aria-label="Sebelumnya">
+                                <i class="fa-solid fa-circle-left me-1"></i>Sebelumnya
+                            </button>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link text-light" id="page">1</span>
+                        </li>
+                        <li class="page-item" id="next">
+                            <button class="page-link" onclick="pagination.next(this)" aria-label="Selanjutnya">
+                                Selanjutnya<i class="fa-solid fa-circle-right ms-1"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Wave Separator -->
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#87ceeb" fill-opacity="1"
+                d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
     </main>
+    <!-- Footer Undangan -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+
+                <p style="font-size: 0.9rem;" class="pt-2 pb-1 px-2" data-aos="fade-up" data-aos-duration="1500">
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i.
+                    berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.
+                </p>
+
+                <h1 class="font-esthetic" data-aos="fade-left" data-aos-duration="2000" style="font-size: 1rem">
+                    Wassalamualaikum Warahmatullahi
+                    Wabarakatuh</h1>
+                <h1 class="font-arabic py-4 px-2" data-aos="fade-right" data-aos-duration="2000"
+                    style="font-size: 2rem">
+                    اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h1>
+
+                <hr class="mt-3 mb-4">
+
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <small class="text-light">
+                            Presented by<i class="fa-solid fa-heart mx-1"></i>FlexDev
+                        </small>
+                    </div>
+                    <div class="col-auto">
+                        <small>
+                            <i class="fa-brands fa-github me-1"></i><a target="_blank"
+                                href="https://github.com/NafMn/invite">NafMn</a>
+                            <i class="fa-brands fa-web me-1"></i><a target="_blank"
+                                href="https://flexdev.site">flexdev.site/undangan</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- welcome-page -->
     <div class="loading-page" id="welcome" style="opacity: 1;">
         <div class="buka" style="height: 100vh !important;">
-            <div class="judul">
+            <div class="judul text-center">
                 <div class="sub">THE WEDDING OF</div>
                 <h1>ARUL &amp; TINA</h1>
             </div>
@@ -425,9 +624,9 @@
 </body>
 
 </html>
-<!-- <script src="assets/js/sakura.js" text="text/javascript"></script> -->
+<script src="assets/js/sakura.js" text="text/javascript"></script>
 <script>
-    const sakura = new Sakura('main', {
+    const sakura = new Sakura('main','body', {
         colors: [
             {
                 gradientColorStart: 'rgba(255, 183, 197, 0.9)',
