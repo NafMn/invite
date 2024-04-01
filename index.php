@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
-    
+
 
     <!-- SEO Tag -->
     <meta name="author" content="Flexdev">
@@ -51,10 +51,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
+
 </head>
 
-<body data-email="user@example.com" data-password="12345678" data-url="https://api.ulems.my.id/"
-    style="overflow-y: hidden;">
+<body style="overflow-y: scroll;" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <!-- Navbar Bottom -->
     <nav class="navbar navbar-light  navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menus">
         <ul class="navbar-nav nav-justified w-100 align-items-center">
@@ -154,8 +154,8 @@
         <!-- Love animation -->
         <div class="position-relative">
             <div class="position-absolute" style="top: 0%; right: 10%;">
-                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                    class="opacity-50" onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
+                <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50"
+                    onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
                     <path
                         d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
                 </svg>
@@ -400,8 +400,8 @@
                                 <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png"
                                     class="img-fluid w-50 rounded" alt="bni">
 
-                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 123456789</p>
-                                <p class="card-text" style="font-size: 0.9rem;">a.n Syahrul Munir</p>
+                                <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">No. Rekening 1180224776</p>
+                                <p class="card-text" style="font-size: 0.9rem;">a.n Agustina Dwi W</p>
 
                                 <!-- Ubah juga data-nomer sesuai dengan no rekening -->
                                 <button class="btn btn-light btn-sm rounded-3" data-nomer="123456789"
@@ -451,81 +451,65 @@
             </div>
         </div>
 
-        <!-- Ucapan -->
-        <section class="m-0 p-0" id="ucapan">
-            <div class="container">
+    <!-- Ucapan -->
+    <section class="m-0 p-0" id="ucapan">
+    <div class="container">
 
-                <div class="card-body border rounded-4 shadow p-3">
-                    <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem;">Ucapan & Doa</h1>
-                    <div class="mb-1" id="balasan"></div>
-
-                    <div class="mb-3">
-                        <label for="form-nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control shadow-sm" id="form-nama" placeholder="Isikan Nama Anda">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="form-kehadiran" class="form-label" id="label-kehadiran">Kehadiran</label>
-                        <select class="form-select shadow-sm" id="form-kehadiran">
-                            <option value="0" selected>Konfirmasi Kehadiran</option>
-                            <option value="1">Hadir</option>
-                            <option value="2">Berhalangan</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="form-pesan" class="form-label">Ucapan & Doa</label>
-                        <div id="alertDiv" class="alert alert-info alert-dismissible fade show" role="alert">
-                            <p style="font-size: 1.5rem;">Bestieee!!!</p>
-                            <p class="m-0">Kami berharap kedatangannya</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
-                                onclick="localStorage.setItem('alertClosed', 'true'); document.getElementById('alertDiv').style.display = 'none';"></button>
-                        </div>
-                        <textarea class="form-control shadow-sm" id="form-pesan" rows="4"
-                            placeholder="Tulis Ucapan & Doa"></textarea>
-                    </div>
-
-                    <div class="d-flex">
-                        <button class="flex-fill btn btn-danger btn-sm rounded-3 shadow m-1" style="display: none;"
-                            onclick="comment.batal()" id="batal">
-                            Batal<i class="fa-solid fa-xmark ms-1"></i>
-                        </button>
-                        <button class="flex-fill btn btn-success btn-sm rounded-3 shadow m-1" style="display: none;"
-                            onclick="comment.balas()" id="balas">
-                            Balas<i class="fa-solid fa-reply ms-1"></i>
-                        </button>
-                        <button class="flex-fill btn btn-warning btn-sm rounded-3 shadow m-1" style="display: none;"
-                            onclick="comment.ubah()" id="ubah">
-                            Ubah<i class="fa-solid fa-pen-to-square ms-1"></i>
-                        </button>
-                        <button class="flex-fill btn btn-primary btn-sm rounded-3 shadow m-1" onclick="comment.kirim()"
-                            id="kirim">
-                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
-                        </button>
-                    </div>
+        <div class="card-body border rounded-4 shadow p-3">
+            <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem;">Ucapan & Doa</h1>
+            <div class="mb-1" id="balasan"></div>
+            <form method="post" id="form-komentar">
+                <div class="mb-3">
+                    <label for="form-nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control shadow-sm" id="form-nama" name="form-nama"
+                        placeholder="Isikan Nama Anda">
                 </div>
 
-                <div class="rounded-4 mt-4 mb-2" id="daftar-ucapan"></div>
+                <div class="mb-3">
+                    <label for="form-kehadiran" class="form-label" id="label-kehadiran">Kehadiran</label>
+                    <select class="form-select shadow-sm" id="form-kehadiran" name="form-kehadiran">
+                        <option value="0" selected>Konfirmasi Kehadiran</option>
+                        <option value="1">Hadir</option>
+                        <option value="2">Berhalangan</option>
+                    </select>
+                </div>
 
-                <nav class="d-flex justify-content-center mb-0">
-                    <ul class="pagination mb-0">
-                        <li class="page-item disabled" id="previous">
-                            <button class="page-link" onclick="pagination.previous(this)" aria-label="Sebelumnya">
-                                <i class="fa-solid fa-circle-left me-1"></i>Sebelumnya
-                            </button>
-                        </li>
-                        <li class="page-item disabled">
-                            <span class="page-link text-light" id="page">1</span>
-                        </li>
-                        <li class="page-item" id="next">
-                            <button class="page-link" onclick="pagination.next(this)" aria-label="Selanjutnya">
-                                Selanjutnya<i class="fa-solid fa-circle-right ms-1"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+                <div class="mb-3">
+                    <label for="form-pesan" class="form-label">Ucapan & Doa</label>
+                    <textarea class="form-control shadow-sm" id="form-pesan" name="form-pesan" rows="4"
+                        placeholder="Tulis Ucapan & Doa"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+
+        <!-- Daftar Komentar -->
+        <div class="rounded-4 mt-4 mb-2" id="daftar-komentar">
+            <?php include "daftar-komentar.php" ?>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="d-flex justify-content-center mb-0">
+            <ul class="pagination mb-0">
+                <li class="page-item disabled" id="previous">
+                    <button class="page-link" onclick="pagination.previous(this)" aria-label="Sebelumnya">
+                        <i class="fa-solid fa-circle-left me-1"></i>Sebelumnya
+                    </button>
+                </li>
+                <li class="page-item disabled">
+                    <span class="page-link text-light" id="page">1</span>
+                </li>
+                <li class="page-item" id="next">
+                    <button class="page-link" onclick="pagination.next(this)" aria-label="Selanjutnya">
+                        Selanjutnya<i class="fa-solid fa-circle-right ms-1"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#87ceeb" fill-opacity="1"
@@ -580,7 +564,7 @@
             </div>
             <div class="deskrip">
                 <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
-                <div class="nama-tamu">Nama Tamu</div>
+                <div class="nama-tamu" id="nama-tamu"></div>
                 <div class="maaf-gelar">*Mohon maaf apabila ada kesalahan pada
                     penulisan nama dan gelar</div>
                 <button type="button" class="btn btn-dark shadow rounded-4 mt-4" onclick="util.buka(this)">
@@ -601,7 +585,7 @@
     <!-- <div class="loading-page" id="loading" style="opacity: 1;">
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
             <div class="text-center w-75">
-                <img class="img-fluid mb-3" src="./assets/images/cowo.png" alt="icon" style="width: 3.5rem;">
+                <img class="img-fluid mb-3" src="./assets/images/cherry-blossom.png" alt="icon" style="width: 3.5rem;">
                 <div class="progress" role="progressbar" style="height: 0.5rem;">
                     <div class="progress-bar" id="bar" style="width: 0%"></div>
                 </div>
@@ -617,6 +601,19 @@
         </div>
     </div> -->
 
+    <!-- Modal Foto Large -->
+    <!-- <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                        <img src="./assets/images/bg.jpeg" class="w-100" alt="foto" id="show-modal-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <!-- Dependencies JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js"></script>
@@ -624,8 +621,8 @@
 </body>
 
 </html>
-<script src="assets/js/sakura.js" text="text/javascript"></script>
-<script>
+<!-- <script src="assets/js/sakura.js" text="text/javascript"></script> -->
+<!-- <script>
     const sakura = new Sakura('main','body', {
         colors: [
             {
@@ -646,4 +643,53 @@
         ],
         delay: 200,
     });
-</script>
+</script> -->
+<!-- JavaScript untuk mengambil dan menampilkan daftar komentar -->
+<!-- Include JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Saat halaman dimuat
+        $(document).ready(function() {
+            // Memuat daftar komentar
+            $.ajax({
+                type: 'POST',
+                url: 'aksi.php',
+                dataType: 'html',
+                success: function(response) {
+                    $('#daftar-komentar').html(response);
+                }
+            });
+
+            // Menangani pengiriman formulir
+            $('#form-komentar').submit(function(event) {
+                // Mencegah pengiriman formulir secara default
+                event.preventDefault();
+                
+                // Kirim data formulir menggunakan AJAX
+                $.ajax({
+                    type: 'POST',
+                    url: 'aksi.php',
+                    data: $(this).serialize(), // Mengambil data formulir
+                    dataType: 'html',
+                    success: function(response) {
+                        $('#daftar-komentar').html(response); // Menampilkan daftar komentar yang diperbarui
+                        $('#form-komentar')[0].reset(); // Mengosongkan formulir setelah pengiriman berhasil
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        // Saat halaman dimuat
+        $(document).ready(function() {
+            // Memuat daftar komentar saat halaman dimuat
+            $.ajax({
+                type: 'POST',
+                url: 'aksi.php',
+                dataType: 'html',
+                success: function(response) {
+                    $('#daftar-komentar').html(response);
+                }
+            });
+        });
+    </script>
